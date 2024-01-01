@@ -1,0 +1,127 @@
+@charset "utf-8";
+@font-face {
+    font-family: font1;
+    src: url(fonts/RavenswoodClocktower.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} /* Seletor universal, colocar o padrão para todos os navegadores*/
+
+
+body {
+    margin:0px;
+    padding:0px;
+    height:100vh;
+    width:100vw;
+    background:#6540a5;
+}   
+
+header h1{
+    letter-spacing: 0.2em;
+    font-family: font1;
+    font-size: 2.5em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    border-style: groove;
+    border-color: rgb(255, 255, 0);
+
+}
+
+.imagem img{
+    width: 100%;
+    height:100%;
+
+
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    background-color: rgb(255, 255, 0);
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0.3em;
+    cursor: pointer; 
+    transition: .99s;
+    border-radius: 100%;
+}
+
+.bar:hover {
+    background-color: #161616;
+
+}
+
+input{
+    display:none;
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem {
+    transition: 0.5s;
+    width: 16.6666666666667%;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+
+}
+
+#imagem2:checked ~ .img1 {
+    margin-left: -16.66666666666667%;
+
+}
+#imagem3:checked ~ .img1 {
+    margin-left: -33.3333333333%;
+
+}
+#imagem4:checked ~ .img1 {
+    margin-left: -50%;
+
+}
+#imagem5:checked ~ .img1 {
+    margin-left: -66.6666666667%;
+
+}
+#imagem6:checked ~ .img1 {
+    margin-left: -83.3333333333%;
+
+}
+
+footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
+    text-align: center;
+    background-color: #333;
+    color: #fff; 
+    padding: 10px; 
+}
