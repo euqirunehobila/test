@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+:root {
+    --cor-texto-principal: #f6ff00;
+    --cor-titulo: rgb(0, 174, 255);
+    --tamanho-titulo: 5em;
+    --tamanho-texto: 1.5em;
+}
+
+h1 {
+    color: var(--cor-texto-principal);
+    font-size: var(--tamanho-titulo);
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: linear-gradient(to bottom, purple,red); */
+    background: url(https://media3.giphy.com/media/xTiTnETzih3HYCaw2Q/giphy.gif?cid=ecf05e47b0nhwpcimzcjoulm00h2n6h8xdcysoyh63lplrsx&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
